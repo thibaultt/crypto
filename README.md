@@ -7,7 +7,7 @@ Il vise à détailler les principes de base de l'échange de clé Diffie-Hellan.
 
 Ce sujet est abordé sous format jupyther notebook.
 
-Tout est détaillé dans le fichier diffie-hellman.ipynb
+Tout est détaillé dans le fichier [diffie-hellman.ipynb](https://github.com/thibaultt/crypto/blob/main/diffie-hellman.ipynb)
 
 ## Intallation de jupyter
 
