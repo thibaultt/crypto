@@ -1,14 +1,19 @@
 # crypto
+## Échange de clés Diffie–Hellman
+
+Ce répo est un projet étudiant pour Épita.
+
+Il vise à détailler les principes de base de l'échange de clé Diffie-Hellan.
+
+Ce sujet est abordé sous format jupyther notebook.
+
+Tout est détaillé dans le fichier diffie-hellman.ipunb
+
 ## Intallation de jupyter
 
 Installer jupyterlab:
 `apt install jupyterlab`
+Plus d'informations [ici]:[https://jupyter.org/install]
 
-Lancer jupyterlab:
+Lancer jupyterlab dans le dossier avec .ipynb:
 `jupyter-lab`
-
-Ce serveur prends les fichiers situer sur `/users/username/jupyter/notebook_secret`
-
-On peut clonner le git là.
-
-** Il suffi ensuite d'ouvrir le .ipynb **
