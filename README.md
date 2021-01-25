@@ -13,7 +13,7 @@ Tout est détaillé dans le fichier diffie-hellman.ipunb
 
 Installer jupyterlab:
 `apt install jupyterlab`
-Plus d'informations [ici]:(https://jupyter.org/install)
+Plus d'informations [ici](https://jupyter.org/install)
 
 Lancer jupyterlab dans le dossier avec .ipynb:
 `jupyter-lab`
