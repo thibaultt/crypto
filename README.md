@@ -17,3 +17,21 @@ Plus d'informations [ici](https://jupyter.org/install)
 
 Lancer jupyterlab dans le dossier de ce git :
 `jupyter-lab`
+
+## Organisation du travail
+
+### Histoire et cas d'usages #Théophane
+Dans `histoire.ipynb`
+
+### Maths (Code pour les formules) #Pià
+Dans `maths.ipynb`
+   - Calcul des shared secret ()
+   - Déclaration des fonctions utilisé dans la partie d'àprès
+   - Expliquer la crypto impliqué 
+### Example d'implémentation (Code pour l'algo) #Thibault #Corentin
+Dans `implementation.ipynb`
+    - Exemple de cas normal Alice, Bob
+    - Exemple de cas d'attaque par Eve
+    (Ouverture sur les limites de diffie-helman)
+
+# Des beaux dessins avec l'iPad de #Pià
