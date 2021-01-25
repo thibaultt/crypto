@@ -15,5 +15,5 @@ Installer jupyterlab:
 `apt install jupyterlab`
 Plus d'informations [ici](https://jupyter.org/install)
 
-Lancer jupyterlab dans le dossier avec .ipynb:
+Lancer jupyterlab dans le dossier de ce git :
 `jupyter-lab`
