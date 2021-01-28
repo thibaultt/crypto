@@ -14259,7 +14259,12 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="HISTOIRE-ET-USAGE">HISTOIRE ET USAGE<a class="anchor-link" href="#HISTOIRE-ET-USAGE">&#182;</a></h3><p>L'échange de clé Diffie-Hellman est une des premières méthodes d'échange sécurisé de clés cryptographiques impliquant la présence d'une clé publique et d'une clé privée. Ce protocole a été publié en 1976 par Whitfield Diffie et Martin Hellman, en s'inspirant des travaux de Ralph Merkle, l'un des inventeurs de la cryptographie par clé publique. En effet, Diffie-Hellman se base sur le puzzle de Merkle, qui se trouve être un jeu où un expéditeur envoie un certain nombre d'énigmes cryptographique à un receveur, qui devra effectuer des calculs pour récupérer un identifiant et une clé de session. Dans ce jeu, le receveur va choisir au hasard une des énigmes qui lui a été envoyé, la résoudre, puis renvoyer l'identifiant à l'expéditeur dans le but de lui notifier de la résolution de l'énigme choisie. L'expediteur recevant cet identifiant sait donc quelle clé de session sera utilisée pour communiquer avec le destinataire. L'intérêt d'un tel mécanisme est qu'un attaquant écoutant les échanges entre les 2 personnes, va peut-être intercepter l'identifiant, mais devra résoudre les énigmes pour récupérer la bonne clé de session, ce qui est beaucoup plus difficile que la résolution d'une seule énigme par le receveur.</p>
+<h1 id="&#201;change-de-cl&#233;s-Diffie-Hellman">&#201;change de cl&#233;s Diffie-Hellman<a class="anchor-link" href="#&#201;change-de-cl&#233;s-Diffie-Hellman">&#182;</a></h1>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="HISTOIRE-ET-USAGE">HISTOIRE ET USAGE<a class="anchor-link" href="#HISTOIRE-ET-USAGE">&#182;</a></h2><p>L'échange de clé Diffie-Hellman est une des premières méthodes d'échange sécurisé de clés cryptographiques impliquant la présence d'une clé publique et d'une clé privée. Ce protocole a été publié en 1976 par Whitfield Diffie et Martin Hellman, en s'inspirant des travaux de Ralph Merkle, l'un des inventeurs de la cryptographie par clé publique. En effet, Diffie-Hellman se base sur le puzzle de Merkle, qui se trouve être un jeu où un expéditeur envoie un certain nombre d'énigmes cryptographique à un receveur, qui devra effectuer des calculs pour récupérer un identifiant et une clé de session. Dans ce jeu, le receveur va choisir au hasard une des énigmes qui lui a été envoyé, la résoudre, puis renvoyer l'identifiant à l'expéditeur dans le but de lui notifier de la résolution de l'énigme choisie. L'expediteur recevant cet identifiant sait donc quelle clé de session sera utilisée pour communiquer avec le destinataire. L'intérêt d'un tel mécanisme est qu'un attaquant écoutant les échanges entre les 2 personnes, va peut-être intercepter l'identifiant, mais devra résoudre les énigmes pour récupérer la bonne clé de session, ce qui est beaucoup plus difficile que la résolution d'une seule énigme par le receveur.</p>
 <p><div style="text-align:center"><img src="./medias/Diffie-Hellman.png" /></div></p>
 <p><div style="text-align:center"><b><u>Les inventeurs de la méthode Diffie-Hellman</u></b></div>
 <br/>
@@ -14277,13 +14282,13 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Base-Math&#233;matiques">Base Math&#233;matiques<a class="anchor-link" href="#Base-Math&#233;matiques">&#182;</a></h1><h2 id="Premi&#232;re-impl&#233;mentation">Premi&#232;re impl&#233;mentation<a class="anchor-link" href="#Premi&#232;re-impl&#233;mentation">&#182;</a></h2><p>Soit $p$ un nombre premier.<br>
+<h2 id="Base-Math&#233;matiques">Base Math&#233;matiques<a class="anchor-link" href="#Base-Math&#233;matiques">&#182;</a></h2><h3 id="Premi&#232;re-impl&#233;mentation">Premi&#232;re impl&#233;mentation<a class="anchor-link" href="#Premi&#232;re-impl&#233;mentation">&#182;</a></h3><p>Soit $p$ un nombre premier.<br>
 On se place dans le groupe multiplicatif ($\mathbf{Z}/p\mathbf{Z}$, $*$)
 d'ordre $p$.<br>
 Soit $g$ $\lt$ $p$.</p>
 <p>Dans le protocole d'échange de clé de Diffie-Hellman, $p$ et $g$ sont connus de tous.<br>
 Le secret partagé que les parties cherchent à obtenir sera <em><strong>secret</strong></em>  avec $1$ $\lt$ <em><strong>secret</strong></em> $\lt$ $p$ $-$ $1$.</p>
-<h3 id="Exemple-protocole">Exemple protocole<a class="anchor-link" href="#Exemple-protocole">&#182;</a></h3><p>Prenons le cas simple où deux personnes $A$ et $B$ souhaitent obtenir un <em><strong>secret</strong></em> partagé.</p>
+<h4 id="Exemple-protocole">Exemple protocole<a class="anchor-link" href="#Exemple-protocole">&#182;</a></h4><p>Prenons le cas simple où deux personnes $A$ et $B$ souhaitent obtenir un <em><strong>secret</strong></em> partagé.</p>
 <p>Soient $a$ la clé privée de $A$ et $b$ la clé privée de $B$.</p>
 <p>Les clés privées de chacun sont définies aléatoirement. Les clés privées ne doivent être connues que de leur détenteur.</p>
 <p>L'obtention de clé publique à partir de la clé privée se fait comme suit :<br>
@@ -14458,7 +14463,7 @@ Ce problème est appelé le problème du logarithme discret.</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="A-plusieurs">A plusieurs<a class="anchor-link" href="#A-plusieurs">&#182;</a></h2><p>Plusieurs personnes peuvent souhaiter partager un secret. Cela est aussi possible avec Diffie-Hellman.<br>
+<h3 id="A-plusieurs">A plusieurs<a class="anchor-link" href="#A-plusieurs">&#182;</a></h3><p>Plusieurs personnes peuvent souhaiter partager un secret. Cela est aussi possible avec Diffie-Hellman.<br>
 Soient <strong>N</strong> personnes souhaitant partager un <em><strong>secret</strong></em> de clé privée $a$, $b$, $c$, ... Il y a donc <strong>N</strong> clés privées.<br>
 $g$ et $p$ sont connus de tous.</p>
 <p>Etape 1 à N-1 : chacun des participants sauf vous mettent le secret temporaire à la puissance de leur clé privée. Ici, une fuite du secret en construction n'a aucune incidence. En effet, même en possession de $g^{abc}$ et de $g^{bcd}$, il est impossible de déduire $g^{abcd}$.<br>
@@ -14523,14 +14528,14 @@ Diffie Hellman ça marche !! secret :  3
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Autres-espaces">Autres espaces<a class="anchor-link" href="#Autres-espaces">&#182;</a></h2><p>La première démonstration de l'échange de clé Diffie-Hellman se faisait effectivement dans $\mathbf{Z}/p\mathbf{Z}$  où $p$ est premier. Cependant, le même principe est applicable dans un groupe cyclique fini quelconque ou même sur une courbe elliptique.<br>
+<h3 id="Autres-espaces">Autres espaces<a class="anchor-link" href="#Autres-espaces">&#182;</a></h3><p>La première démonstration de l'échange de clé Diffie-Hellman se faisait effectivement dans $\mathbf{Z}/p\mathbf{Z}$  où $p$ est premier. Cependant, le même principe est applicable dans un groupe cyclique fini quelconque ou même sur une courbe elliptique.<br>
 Il faut donc se placer dans un groupe fini et savoir le définir pour pouvoir ensuite calculer clé privée et <em><strong>secret</strong></em>.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Limitation-crypto">Limitation crypto<a class="anchor-link" href="#Limitation-crypto">&#182;</a></h2><p>Les difficultés de l'échange de clé de Diffie-Hellman sont les mêmes que pour toute la crypto.<br>
+<h3 id="Limitation-crypto">Limitation crypto<a class="anchor-link" href="#Limitation-crypto">&#182;</a></h3><p>Les difficultés de l'échange de clé de Diffie-Hellman sont les mêmes que pour toute la crypto.<br>
 Dans le cas d'un groupe $\mathbf{Z}/p\mathbf{Z}$  où $p$ est premier, la première difficulté réside dans le fait de trouver un nombre premier (assez grand).<br>
 Il est ensuite question de génération d'aléa pour les clés privées des parties.</p>
 
@@ -14538,7 +14543,7 @@ Il est ensuite question de génération d'aléa pour les clés privées des part
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Variables-de-maths.ipynb">Variables de maths.ipynb<a class="anchor-link" href="#Variables-de-maths.ipynb">&#182;</a></h3>
+<h3 id="Fonctions-utilis&#233;es-apr&#232;s">Fonctions utilis&#233;es apr&#232;s<a class="anchor-link" href="#Fonctions-utilis&#233;es-apr&#232;s">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -14610,9 +14615,7 @@ Il est ensuite question de génération d'aléa pour les clés privées des part
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2)-Calcul-et-&#201;change-des-cl&#233;s-publiques">2) Calcul et &#201;change des cl&#233;s publiques<a class="anchor-link" href="#2)-Calcul-et-&#201;change-des-cl&#233;s-publiques">&#182;</a></h3><p><div style="width; 100px;">
-![échange](medias/echange.png)
- </div></p>
+<h3 id="2)-Calcul-et-&#201;change-des-cl&#233;s-publiques">2) Calcul et &#201;change des cl&#233;s publiques<a class="anchor-link" href="#2)-Calcul-et-&#201;change-des-cl&#233;s-publiques">&#182;</a></h3><p><img src="medias/echange.png" width="800"/></p>
 <h5 id="Alice-calcul-et-envoye-sa-cl&#233;-publique:">Alice calcul et envoye sa cl&#233; publique:<a class="anchor-link" href="#Alice-calcul-et-envoye-sa-cl&#233;-publique:">&#182;</a></h5>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14888,7 +14891,7 @@ Il est ensuite question de génération d'aléa pour les clés privées des part
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2)-Caclcul-et-&#201;change-des-cl&#233;es-publiques">2) Caclcul et &#201;change des cl&#233;es publiques<a class="anchor-link" href="#2)-Caclcul-et-&#201;change-des-cl&#233;es-publiques">&#182;</a></h3><p><img src="medias/echange_attaque.png" width="800"/></p>
+<h3 id="2)-Caclcul-et-&#201;change-des-cl&#233;s-publiques">2) Caclcul et &#201;change des cl&#233;s publiques<a class="anchor-link" href="#2)-Caclcul-et-&#201;change-des-cl&#233;s-publiques">&#182;</a></h3><p><img src="medias/echange_attaque.png" width="800"/></p>
 <h5 id="Alice-calcule-et-envoie-sa-cl&#233;-publique-&#224;-Bob-(Mais-l'envoie-en-fait-&#224;-Eve):">Alice calcule et envoie sa cl&#233; publique &#224; Bob (Mais l'envoie en fait &#224; Eve):<a class="anchor-link" href="#Alice-calcule-et-envoie-sa-cl&#233;-publique-&#224;-Bob-(Mais-l'envoie-en-fait-&#224;-Eve):">&#182;</a></h5>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14939,7 +14942,7 @@ Il est ensuite question de génération d'aléa pour les clés privées des part
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clé_publique_de_Bob</span> <span class="o">=</span> <span class="n">chiffrement</span> <span class="p">(</span><span class="n">clé_privée_de_Bob</span><span class="p">,</span> <span class="n">base_partagé</span><span class="p">,</span> <span class="n">premier_partagé</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Clée publique de Bob : &quot;</span><span class="p">,</span> <span class="n">clé_publique_de_bob</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Clé publique de Bob : &quot;</span><span class="p">,</span> <span class="n">clé_publique_de_bob</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14959,7 +14962,7 @@ Il est ensuite question de génération d'aléa pour les clés privées des part
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Clée publique de Bob :  42360
+<pre>Clé publique de Bob :  42360
 </pre>
 </div>
 </div>
